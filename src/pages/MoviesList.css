@@ -1,0 +1,62 @@
+/* src/pages/MoviesList.css */
+.page-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 16px;
+}
+
+.loading {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    background: #fff;
+}
+
+.title {
+    margin: 6px 0;
+}
+
+.tagline {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.rating {
+    margin-bottom: 8px;
+}
+
+.view-link {
+    color: #0066cc;
+    text-decoration: none;
+}
